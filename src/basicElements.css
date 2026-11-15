@@ -1,0 +1,80 @@
+:root{
+    --textColorA: rgb(255,166,0);
+    --textColorB: rgb(255, 242, 183);
+    --textColorC: rgb(163, 49, 14);
+    
+    --bgColorA: rgb(61, 50, 37);
+    --bgColorB: rgb(51, 32, 32);
+
+    --divColorA: rgb(80, 67, 50);
+    --divColorB: rgb(77, 60, 57);
+    --divColorC: rgb(31, 26, 21);
+    --divColorD: rgb(114, 98, 82);
+}
+
+.basic-div {
+    background: linear-gradient(0deg, var(--divColorA) 0%, var(--divColorB) 100%);
+    color: var(--textColorB);
+    text-align: center;
+    margin: 1% 4% 0 4%;
+    padding: 1% 1% 0% 1%;
+    border-radius:1cap;
+    box-shadow: 4px 4px 0px 0px rgb(0,0,0);
+    border: 10px solid var(--divColorD);
+}
+
+.basic-img-div {
+    background: linear-gradient(0deg, var(--divColorA) 0%, var(--divColorB) 100%);
+    color: var(--textColorB);
+    text-align: center;
+    margin: 1% 1% 1% 1%;
+    border-radius:1cap;
+    box-shadow: 4px 4px 0px 0px rgb(0,0,0);
+    border: 10px solid var(--divColorD);
+}
+
+.basic-seperator-line {
+
+    margin: 1% 4% 2% 4%;
+    color: var(--textColorA);
+    background-color: var(--textColorA);
+    box-shadow: 4px 4px 0px 0px rgb(0,0,0);
+    height: 10px;
+
+}
+
+#main-page {
+    text-align: center;
+    margin: 1% 4% 0 4%;
+    border-radius:1cap;
+}
+
+body {
+    background: linear-gradient(-45deg, var(--bgColorB) 0%, var(--bgColorA) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    min-height: 100vh;
+    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px rgb(0,0,0);
+    overflow-x: hidden;
+}
+
+a {
+    color:aqua;
+}
+h4 {
+    color: var(--textColorA);
+}
+
+.navigation-div>button {
+    color: aqua;
+    border: none;
+    background-color: var(--divColorB);
+    margin-inline: 2%;
+    width: 250px;
+    height: 30px;
+    text-decoration: underline;
+    
+}
