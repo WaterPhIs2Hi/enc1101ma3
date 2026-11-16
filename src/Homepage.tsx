@@ -43,7 +43,7 @@ function Homepage() {
 
           <BasicFlexImage 
             widthPercentage={30}
-            imgPath="src/assets/indie_dev_image_0.png"
+            imgPath={`${import.meta.env.BASE_URL}assets/indie_dev_image_0.png`}
             altText="A photo of level 5 of The Revenge of Icarus"
             key="b"/>
           ]}/>
@@ -64,7 +64,7 @@ function Homepage() {
             [
             <BasicFlexImage 
             widthPercentage={30}
-            imgPath="src/assets/vcs_image.png"
+            imgPath={`${import.meta.env.BASE_URL}assets/vcs_image.png`}
             altText="A photo of the 4 members of VCS"
             key="a"/>,
 
@@ -79,26 +79,26 @@ function Homepage() {
             [
             <BasicFlexImage 
             widthPercentage={25}
-            imgPath="src/assets/icarus_image_0.png"
+            imgPath={`${import.meta.env.BASE_URL}assets/icarus_image_0.png`}
             altText={"A photo of level 5 of \"The Revenge of Icarus\""}
             key="a"/>,
           
             <BasicFlexImage 
             widthPercentage={25}
-            imgPath="src/assets/amplobus_image_0.png"
+            imgPath={`${import.meta.env.BASE_URL}assets/amplobus_image_0.png`}
             altText={"A photo of a level from \"AMPLOBUS\""}
             key="b"/>,
 
             <BasicFlexImage 
             widthPercentage={25}
-            imgPath="src/assets/agdtbal_image_0.png"
+            imgPath={`${import.meta.env.BASE_URL}assets/agdtbal_image_0.png`}
             altText={"A photo of \"A good day to be a lunatic\""}
             key="c"/>
           ]}/>
 
           <HorizontalPanelGroup title="" height={500} children={[
-            <BigButton label="Artifact Analysis 1: Game Jam Calls" numberAction={() =>  setSelectedIndex(1)} imageURL="src/assets/artifact_1_button_bg.png"/>,
-            <BigButton label="Artifact Analysis 2: Meetings" numberAction={() =>  setSelectedIndex(2)} imageURL="src/assets/artifact_2_button_bg.png"/>
+            <BigButton label="Artifact Analysis 1: Game Jam Calls" numberAction={() =>  setSelectedIndex(1)} imageURL={`${import.meta.env.BASE_URL}assets/artifact_1_button_bg.png`}/>,
+            <BigButton label="Artifact Analysis 2: Meetings" numberAction={() =>  setSelectedIndex(2)} imageURL={`${import.meta.env.BASE_URL}assets/artifact_2_button_bg.png`}/>
           ]}/>
           
           <MainFooter setSelected={setSelectedIndex}/>
@@ -110,7 +110,7 @@ function Homepage() {
         return <ArtifactPage 
         artifactName="Game Jam Calls" 
         artifactDescription={description1} 
-        imageSource="src/assets/artifact_1.png"
+        imageSource={`${import.meta.env.BASE_URL}assets/artifact_1.png`}
         culturalSignificance={culturalSignificance1}
         swalesCriteriaFulfliment={criteria1}
         setSelected={setSelectedIndex}
@@ -120,7 +120,7 @@ function Homepage() {
         return <ArtifactPage 
         artifactName="Meetings" 
         artifactDescription={description2} 
-        imageSource="src/assets/artifact_2.png"
+        imageSource={`${import.meta.env.BASE_URL}assets/artifact_2.png`}
         culturalSignificance={culturalSignificance2}
         swalesCriteriaFulfliment={criteria2}
         setSelected={setSelectedIndex}
